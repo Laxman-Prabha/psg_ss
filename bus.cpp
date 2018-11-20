@@ -22,7 +22,7 @@ void vline(char ch)
   for (int i=50;i>0;i--)
   cout<<ch;
 }
-void a::install()
+void a::add()
 {
   cout<<"Enter bus no: ";
   cin>>bus[p].busn;
@@ -169,11 +169,9 @@ void a::join()
   }
 int main()
 {
-system("cls");
 int choice;
 string name;
-string roomno;
-string address;
+
 int n=2511;
 int num;
 
@@ -195,7 +193,7 @@ while(1){
   cin>>choice;
   switch(choice)
   {
-    case 1: bus[p].install();
+    case 1: bus[p].add();
       break;
     case 2: bus[p].allotment();
       break;
